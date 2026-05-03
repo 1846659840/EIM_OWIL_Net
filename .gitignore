@@ -1,0 +1,65 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.pytest_cache/
+.tox/
+.coverage
+.coverage.*
+htmlcov/
+.cache/
+.mypy_cache/
+.pytype/
+.pyre/
+.ruff_cache/
+
+# Virtual envs
+.venv/
+venv/
+env/
+ENV/
+
+# Build artefacts
+build/
+dist/
+*.egg-info/
+*.egg
+
+# --- ML / data artefacts ---
+checkpoints/
+logs/
+runs/
+wandb/
+mlruns/
+outputs/
+.tensorboard/
+
+# Generated dataset trees (videos / features / placeholder lists)
+data/
+!data/.gitkeep
+
+# Concept text-embedding cache (built by scripts/build_concept_text_embeddings.py)
+concept_text_embeddings.pt
+concept_build.log
+
+# Heavy paper PDF (kept under paper/, not papercode/)
+main.pdf
+
+# --- IDE / OS ---
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# --- OMC project state ---
+.omc/
+.claude/
+
+# --- Misc ---
+*.log
+*.tmp
+*.bak
